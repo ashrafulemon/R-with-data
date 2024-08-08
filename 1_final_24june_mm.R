@@ -15,7 +15,9 @@ wo2= read.xlsx("I:\\1_upwork\\004_work with Jinu_____data analysis\\demo_R_Copy\
                sheet=2,colNames=T, detectDates=F) 
 
 wo1=wo1[,c(1:4,20)]
-wo2=wo2[,c(1:4,15)]
+head(wo1[5],1)
+wo2=wo2[,c(1:4,21)] #15
+head(wo2[5],1)
 wo=rbind(wo1,wo2)
 
 wo[1]=trimws(unlist(wo[1]))  
